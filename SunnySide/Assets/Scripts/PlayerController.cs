@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     
 
+    //확인용 주석
 
     [SerializeField] private Collider2D coll;
     [SerializeField] private LayerMask ground;
