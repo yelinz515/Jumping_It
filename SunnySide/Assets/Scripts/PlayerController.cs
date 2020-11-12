@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     
 
-    //확인용 주석
+    //확인용 주석, 예린 확인용 주석 , 찐막확인용
 
     [SerializeField] private Collider2D coll;
     [SerializeField] private LayerMask ground;
