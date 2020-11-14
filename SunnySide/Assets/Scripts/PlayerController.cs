@@ -66,6 +66,12 @@ public class PlayerController : MonoBehaviour
             cherries += 1;
             cherryText.text = cherries.ToString();
         }
+
+        else if (collision.tag == "Gem")
+        {
+            Destroy(collision.gameObject);
+            cherry.Play();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
