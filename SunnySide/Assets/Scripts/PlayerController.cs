@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed = 5f;
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private int cherries = 0;
-    [SerializeField] private Text cherryText;
+    [SerializeField] private TextMeshProUGUI cherryText;
     [SerializeField] private float hurtForce = 10f;
     [SerializeField] private AudioSource cherry;
     [SerializeField] private AudioSource footstep;
