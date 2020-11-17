@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -21,7 +22,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float hurtForce = 10f;
     [SerializeField] private AudioSource cherry;
     [SerializeField] private AudioSource footstep;
-
+    [SerializeField] private int health;
+    [SerializeField] private Text healthAmount;
+ 
 
     private enum State { idle, running, jumping, falling, hurt, climb }
     private State state = State.idle;
@@ -42,6 +45,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
         naturalGravity = rb.gravityScale;
+        healthAmount.text = health.ToString();
     }
 
     // Update is called once per frame
@@ -89,7 +93,8 @@ public class PlayerController : MonoBehaviour
             else
             {
                 state = State.hurt;
-                if(collision.gameObject.transform.position.x > transform.position.x)
+                HandleHealth();
+                if (collision.gameObject.transform.position.x > transform.position.x)
                 {
                     rb.velocity = new Vector2(-hurtForce, rb.velocity.y);
                 }
@@ -98,6 +103,16 @@ public class PlayerController : MonoBehaviour
                     rb.velocity = new Vector2(hurtForce, rb.velocity.y);
                 }
             }
+        }
+    }
+
+    private void HandleHealth()
+    {
+        health -= 1;
+        healthAmount.text = health.ToString();
+        if (health <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
