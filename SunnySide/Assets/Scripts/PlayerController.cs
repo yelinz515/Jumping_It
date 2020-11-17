@@ -9,22 +9,27 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
-    
+
+    private bool ishurt;
+    public bool isice;
 
     //확인용 주석, 예린 확인용 주석 , 찐막확인용
 
     [SerializeField] private Collider2D coll;
     [SerializeField] private LayerMask ground;
-    [SerializeField] private float speed = 5f;
+    [SerializeField] private float speed = 5.5f;
     [SerializeField] private float jumpForce = 10f;
     public int cherries = 0;
     [SerializeField] private TextMeshProUGUI cherryText;
     [SerializeField] private float hurtForce = 10f;
     [SerializeField] private AudioSource cherry;
     [SerializeField] private AudioSource footstep;
-    [SerializeField] private int health;
-    [SerializeField] private Text healthAmount;
- 
+    public int health;
+
+    SpriteRenderer spr;
+    Color newcolor;
+    Color oldcolor;
+
 
     private enum State { idle, running, jumping, falling, hurt, climb }
     private State state = State.idle;
@@ -43,9 +48,15 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        coll = GetComponent<Collider2D>();
+        // coll = GetComponent<Collider2D>();
+        spr = GetComponent<SpriteRenderer>();
+        oldcolor = spr.color;
+        newcolor = spr.color;
+        newcolor.a = 0.75f;
         naturalGravity = rb.gravityScale;
-        healthAmount.text = health.ToString();
+
+        ishurt = false;
+        isice = false;
     }
 
     // Update is called once per frame
@@ -61,6 +72,15 @@ public class PlayerController : MonoBehaviour
         }
         VelocityState();
         anim.SetInteger("State", (int)state);
+
+        if (isice)
+        {
+            speed = 11f;
+        }
+        else
+        {
+            speed = 5.5f;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -78,11 +98,24 @@ public class PlayerController : MonoBehaviour
             cherry.Play();
 
         }
+
+        
     }
 
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "iceground")
+        {
+            isice = true;
+        }
+        if (collision.gameObject.tag == "normalground")
+        {
+            isice = false;
+        }
+
+
+        if (collision.gameObject.tag == "Enemy" && !ishurt)
         {
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             if(state == State.falling)
@@ -93,7 +126,9 @@ public class PlayerController : MonoBehaviour
             else
             {
                 state = State.hurt;
+                ishurt = true;
                 HandleHealth();
+                spr.color = newcolor;
                 if (collision.gameObject.transform.position.x > transform.position.x)
                 {
                     rb.velocity = new Vector2(-hurtForce, rb.velocity.y);
@@ -102,14 +137,17 @@ public class PlayerController : MonoBehaviour
                 {
                     rb.velocity = new Vector2(hurtForce, rb.velocity.y);
                 }
+                StartCoroutine(WaitForIt());
             }
+
         }
+
+        
     }
 
     private void HandleHealth()
     {
         health -= 1;
-        healthAmount.text = health.ToString();
         if (health <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -176,8 +214,9 @@ public class PlayerController : MonoBehaviour
         }
         else if(state == State.hurt)
         {
-            if(Mathf.Abs(rb.velocity.x) < 0.1f)
+            if(Mathf.Abs(rb.velocity.x) < 0.1f && !ishurt)
             {
+                spr.color = oldcolor;
                 state = State.idle;
             }
         }
@@ -224,5 +263,12 @@ public class PlayerController : MonoBehaviour
     private void Footstep()
     {
         footstep.Play();
+    }
+
+    IEnumerator WaitForIt()
+    {
+        yield return new WaitForSeconds(1.5f); //2초 기다린다.
+        // 수행할 액션들 
+        ishurt = false;
     }
 }

@@ -7,6 +7,8 @@ TagManager:
   - Collectable
   - Enemy
   - Gem
+  - iceground
+  - normalground
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - 
   - 
   - Ground
-  - 
+  - IceGround
   - 
   - 
   - 
