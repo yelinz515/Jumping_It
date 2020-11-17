@@ -13,14 +13,12 @@ public class PlayerController : MonoBehaviour
     private bool ishurt;
     public bool isice;
 
-    //확인용 주석, 예린 확인용 주석 , 찐막확인용
-
     [SerializeField] private Collider2D coll;
     [SerializeField] private LayerMask ground;
     [SerializeField] private float speed = 5.5f;
     [SerializeField] private float jumpForce = 10f;
     public int cherries = 0;
-    [SerializeField] private TextMeshProUGUI cherryText;
+    // [SerializeField] private TextMeshProUGUI cherryText;
     [SerializeField] private float hurtForce = 10f;
     [SerializeField] private AudioSource cherry;
     [SerializeField] private AudioSource footstep;
@@ -90,7 +88,8 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
             cherry.Play();
             cherries += 1;
-            cherryText.text = cherries.ToString();
+            // cherryText.text = cherries.ToString();
+
         }
 
         else if (collision.tag == "Gem")
