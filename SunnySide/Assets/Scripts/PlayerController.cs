@@ -44,6 +44,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameObject.Find("Main Camera").GetComponent<BackgroundMusic>().musicChange();
+
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         // coll = GetComponent<Collider2D>();
@@ -52,7 +54,6 @@ public class PlayerController : MonoBehaviour
         newcolor = spr.color;
         newcolor.a = 0.75f;
         naturalGravity = rb.gravityScale;
-
         ishurt = false;
         isice = false;
     }
