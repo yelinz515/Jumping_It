@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Collider2D coll;
     [SerializeField] private LayerMask ground;
+    [SerializeField] private LayerMask ladderLayer;
     [SerializeField] private float speed = 5.5f;
     [SerializeField] private float jumpForce = 10f;
     public int cherries = 0;
@@ -44,8 +45,6 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject.Find("Main Camera").GetComponent<BackgroundMusic>().musicChange();
-
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         // coll = GetComponent<Collider2D>();
@@ -190,6 +189,7 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         state = State.jumping;
+        
     }
 
     private void VelocityState()
@@ -199,10 +199,14 @@ public class PlayerController : MonoBehaviour
 
         }
         else if(state == State.jumping)
-        {
+        {    
             if (rb.velocity.y < 0.1f)
             {
                 state = State.falling;
+                if (coll.IsTouchingLayers(ladderLayer))
+                {
+                    canClimb = true;
+                }
             }
         }
         else if(state == State.falling)
@@ -238,8 +242,7 @@ public class PlayerController : MonoBehaviour
             canClimb = false;
             rb.gravityScale = naturalGravity;
             // anim.speed = 1f;
-            Jump();
-            
+            Jump();  
         }
 
         float vDirection = Input.GetAxis("Vertical");

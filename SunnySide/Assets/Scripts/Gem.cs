@@ -31,6 +31,7 @@ public class Gem : MonoBehaviour
     public void nextStage()
     {
         string scenename = SceneManager.GetActiveScene().name;
+        // GameObject.Find("Main Camera").GetComponent<BackgroundMusic>().musicChange();
 
         switch (scenename)
         {

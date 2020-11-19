@@ -11,6 +11,7 @@ public class BackgroundMusic : MonoBehaviour
     private void Start()
     {
         audiosource = GetComponent<AudioSource>();
+        musicChange();
     }
 
     private void Update()

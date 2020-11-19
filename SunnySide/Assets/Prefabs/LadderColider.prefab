@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6179676227035893946}
   - component: {fileID: 6179676227035893944}
   - component: {fileID: 6179676227035893947}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TopOfLadder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 6179676227436486597}
   - component: {fileID: 6179676227436486603}
   - component: {fileID: 6179676227436486602}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BottomOfLadder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,7 +153,7 @@ GameObject:
   - component: {fileID: 6179676228465218489}
   - component: {fileID: 6179676228465218488}
   - component: {fileID: 6179676228465218491}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LadderColider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
