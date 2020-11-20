@@ -169,14 +169,14 @@ public class PlayerController : MonoBehaviour
         if (hDirection < 0)
         {
             rb.velocity = new Vector2(-speed, rb.velocity.y);
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector2(-0.9f, 0.9f);
 
         }
 
         else if (hDirection > 0)
         {
             rb.velocity = new Vector2(speed, rb.velocity.y);
-            transform.localScale = new Vector2(1, 1);
+            transform.localScale = new Vector2(0.9f, 0.9f);
 
         }
 
