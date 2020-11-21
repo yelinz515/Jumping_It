@@ -9,6 +9,7 @@ TagManager:
   - Gem
   - iceground
   - normalground
+  - thorn
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Ground
   - IceGround
   - Ladder
-  - 
+  - ThornGround
   - 
   - 
   - 
@@ -57,4 +58,7 @@ TagManager:
     locked: 0
   - name: tile
     uniqueID: 2218527143
+    locked: 0
+  - name: thorn
+    uniqueID: 270629693
     locked: 0

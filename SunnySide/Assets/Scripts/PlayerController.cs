@@ -141,8 +141,27 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        
-    }
+
+        if (collision.gameObject.tag == "thorn" && !ishurt)
+        {
+
+            state = State.hurt;
+            ishurt = true;
+            HandleHealth();
+            spr.color = newcolor;
+            if (collision.gameObject.transform.position.x > transform.position.x)
+            {
+                rb.velocity = new Vector2(-hurtForce, rb.velocity.y);
+            }
+            else
+            {
+                rb.velocity = new Vector2(hurtForce, rb.velocity.y);
+            }
+            StartCoroutine(WaitForIt());
+
+         }
+
+     }
 
     private void HandleHealth()
     {
