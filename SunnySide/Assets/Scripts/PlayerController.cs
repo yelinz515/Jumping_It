@@ -144,7 +144,6 @@ public class PlayerController : MonoBehaviour
 
         if (collision.gameObject.tag == "thorn" && !ishurt)
         {
-
             state = State.hurt;
             ishurt = true;
             HandleHealth();
@@ -158,7 +157,6 @@ public class PlayerController : MonoBehaviour
                 rb.velocity = new Vector2(hurtForce, rb.velocity.y);
             }
             StartCoroutine(WaitForIt());
-
          }
 
      }
@@ -216,6 +214,13 @@ public class PlayerController : MonoBehaviour
         if(state == State.climb)
         {
 
+        }
+        else if(state == State.running)
+        {
+            if (rb.velocity.y < -1f)
+            {
+                state = State.falling;
+            }
         }
         else if(state == State.jumping)
         {    
