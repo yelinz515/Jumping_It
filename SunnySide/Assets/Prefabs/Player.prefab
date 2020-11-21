@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 506324132395898226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 36.82, y: -2.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -120,17 +120,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34bacb74092e9744a1d07eaf52550bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isice: 0
   coll: {fileID: 506324132395898219}
   ground:
     serializedVersion: 2
     m_Bits: 256
+  ladderLayer:
+    serializedVersion: 2
+    m_Bits: 1024
   speed: 5.5
   jumpForce: 10
   cherries: 0
-  cherryText: {fileID: 0}
   hurtForce: 10
   cherry: {fileID: 506324132395898218}
   footstep: {fileID: 506324132395898221}
+  health: 3
   canClimb: 0
   bottomLadder: 0
   topLadder: 0
@@ -168,8 +172,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.036067963, y: -0.30457383}
-  m_Size: {x: 1.0285535, y: 1.4533523}
+  m_Offset: {x: -0.036067963, y: -0.29826063}
+  m_Size: {x: 1.0285535, y: 1.4407259}
   m_Direction: 0
 --- !u!82 &506324132395898221
 AudioSource:

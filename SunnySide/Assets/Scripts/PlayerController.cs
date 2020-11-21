@@ -217,7 +217,7 @@ public class PlayerController : MonoBehaviour
         }
         else if(state == State.running)
         {
-            if (rb.velocity.y < -1f)
+            if (rb.velocity.y < -4f)
             {
                 state = State.falling;
             }
