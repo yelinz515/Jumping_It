@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
 
         if (isice)
         {
-            speed = 11f;
+            speed = 10f;
         }
         else
         {
