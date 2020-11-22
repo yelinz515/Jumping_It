@@ -1,0 +1,482 @@
+fileFormatVersion: 2
+guid: c91eb4353ea1a4247b199638b69c3293
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 70090631068735962
+    second: dunwall_0
+  - first:
+      213: -9103852758178773869
+    second: dunwall_1
+  - first:
+      213: -6247981222219095103
+    second: dunwall_2
+  - first:
+      213: -2334802780252282167
+    second: dunwall_3
+  - first:
+      213: -2371390239131506987
+    second: dunwall_4
+  - first:
+      213: 5528215741672497836
+    second: dunwall_5
+  - first:
+      213: 1711892617488764625
+    second: dunwall_6
+  - first:
+      213: 8877686808757452052
+    second: dunwall_7
+  - first:
+      213: -5302836883734017612
+    second: dunwall_8
+  - first:
+      213: 7397601261778065555
+    second: dunwall_9
+  - first:
+      213: 5510470667745572754
+    second: dunwall_10
+  - first:
+      213: -7061149088137444631
+    second: dunwall_11
+  - first:
+      213: 2521766471223069985
+    second: dunwall_12
+  - first:
+      213: 5309831476215068528
+    second: dunwall_13
+  - first:
+      213: 2347634550083883395
+    second: dunwall_14
+  - first:
+      213: -1898969664213080520
+    second: dunwall_15
+  - first:
+      213: -1682725108145936676
+    second: dunwall_16
+  - first:
+      213: -1622940635328891043
+    second: dunwall_17
+  - first:
+      213: 4693406841715409816
+    second: dunwall_18
+  - first:
+      213: 5855333846378711077
+    second: dunwall_19
+  - first:
+      213: -5932445518929967357
+    second: dunwall_20
+  - first:
+      213: 7375846606557528547
+    second: dunwall_21
+  - first:
+      213: -2670022916802728028
+    second: dunwall_22
+  - first:
+      213: 432525604520168720
+    second: dunwall_23
+  - first:
+      213: 7878340867124594245
+    second: dunwall_24
+  - first:
+      213: 5500011504861825264
+    second: dunwall_25
+  - first:
+      213: -2345508831247312134
+    second: dunwall_26
+  - first:
+      213: -5781257479040717551
+    second: dunwall_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dunwall_5
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 291
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2ac146dea28bc40800000000000000
+      internalID: 5528215741672497836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dunwall_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 291
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de080ff34dd1c710800000000000000
+      internalID: 1711892617488764625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dunwall_8
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 291
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9c13b23f98866b0800000000000000
+      internalID: -5302836883734017612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dunwall_9
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 291
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3985346472f89a660800000000000000
+      internalID: 7397601261778065555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dunwall_10
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2973f2860ef197c40800000000000000
+      internalID: 5510470667745572754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dunwall_12
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12dcdb3ae3d1ff220800000000000000
+      internalID: 2521766471223069985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dunwall_13
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 253
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077bcfc489f40b940800000000000000
+      internalID: 5309831476215068528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dunwall_14
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 253
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3811f2c5f29749020800000000000000
+      internalID: 2347634550083883395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dunwall_16
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 253
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6a45afd62c5a8e0800000000000000
+      internalID: -1682725108145936676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dunwall_17
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 253
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57bca347182a79e0800000000000000
+      internalID: -1622940635328891043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dunwall_18
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 234
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893c5d2e7a4522140800000000000000
+      internalID: 4693406841715409816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dunwall_19
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 234
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52889b24c13524150800000000000000
+      internalID: 5855333846378711077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dunwall_21
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 234
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1c1a5e8654c5660800000000000000
+      internalID: 7375846606557528547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dunwall_22
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 234
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af22d5bd4c22fad0800000000000000
+      internalID: -2670022916802728028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

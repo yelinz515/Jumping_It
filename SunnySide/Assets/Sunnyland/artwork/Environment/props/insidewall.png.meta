@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: 546bb3d1093874f4ebac02e21d1a1eeb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3206917026181790905
+    second: insidewall_0
+  - first:
+      213: -9182761830506106990
+    second: insidewall_1
+  - first:
+      213: 1967643737297619205
+    second: insidewall_2
+  - first:
+      213: -473985403064400342
+    second: insidewall_3
+  - first:
+      213: 2789467130169161592
+    second: insidewall_4
+  - first:
+      213: -4531112524745554414
+    second: insidewall_5
+  - first:
+      213: 9145294463935916178
+    second: insidewall_6
+  - first:
+      213: 3477748258567610230
+    second: insidewall_7
+  - first:
+      213: -5627398754441406627
+    second: insidewall_8
+  - first:
+      213: 7363371822125052312
+    second: insidewall_9
+  - first:
+      213: 1492718569321726907
+    second: insidewall_10
+  - first:
+      213: -3930424438218871566
+    second: insidewall_11
+  - first:
+      213: 194525816145539756
+    second: insidewall_12
+  - first:
+      213: -4184879755804851168
+    second: insidewall_13
+  - first:
+      213: -9178686539510939456
+    second: insidewall_14
+  - first:
+      213: 8146046470957070855
+    second: insidewall_15
+  - first:
+      213: -5911270477249543331
+    second: insidewall_16
+  - first:
+      213: -9110581331162277974
+    second: insidewall_17
+  - first:
+      213: 8414851813876192475
+    second: insidewall_18
+  - first:
+      213: -1377552075725416469
+    second: insidewall_19
+  - first:
+      213: -1430560700947594785
+    second: insidewall_20
+  - first:
+      213: -7066240733969063337
+    second: insidewall_21
+  - first:
+      213: 8597120518287188719
+    second: insidewall_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: insidewall_1
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 279
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29feaab74c6409080800000000000000
+      internalID: -9182761830506106990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: insidewall_2
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 279
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5098526dd897e4b10800000000000000
+      internalID: 1967643737297619205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: insidewall_3
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 279
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2640a589c01c69f0800000000000000
+      internalID: -473985403064400342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: insidewall_11
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 255
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc23773cc35479c0800000000000000
+      internalID: -3930424438218871566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: insidewall_12
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 255
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca27ffaf23813b200800000000000000
+      internalID: 194525816145539756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: insidewall_19
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 230
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7d8ca8fa3f1ece0800000000000000
+      internalID: -1377552075725416469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: insidewall_20
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 230
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd182663f90a52ce0800000000000000
+      internalID: -1430560700947594785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: insidewall_21
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 230
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752e062bd7bafed90800000000000000
+      internalID: -7066240733969063337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
