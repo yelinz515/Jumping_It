@@ -40,7 +40,7 @@ public class Gem : MonoBehaviour
                 Time.timeScale = 1;
                 break;
             case "scenes1":
-                // SceneManager.LoadScene("scenes1");
+                SceneManager.LoadScene("scenes2");
                 Time.timeScale = 1;
                 break;
         }

@@ -64,10 +64,12 @@ public class PlayerController : MonoBehaviour
     {
         if (state == State.climb && canClimb)
         {
+            TouchClimb();
             Climb();
         }
         else if (state != State.hurt)
         {
+            TouchMovement();
             Movement();
         }
         VelocityState();
@@ -207,9 +209,54 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
     }
+
+    private void TouchMovement()
+    {
+        float hDirection = SimpleInput.GetAxis("Horizontal");
+
+        if (canClimb && Mathf.Abs(SimpleInput.GetAxis("Vertical")) > .1f)
+        {
+            state = State.climb;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+            transform.position = new Vector3(ladder.transform.position.x, rb.position.y);
+            rb.gravityScale = 0f;
+
+        }
+
+        if (hDirection < 0)
+        {
+            rb.velocity = new Vector2(-speed, rb.velocity.y);
+            transform.localScale = new Vector2(-0.9f, 0.9f);
+
+        }
+
+        else if (hDirection > 0)
+        {
+            rb.velocity = new Vector2(speed, rb.velocity.y);
+            transform.localScale = new Vector2(0.9f, 0.9f);
+
+        } 
+    }
     private void Jump()
     {
         if (isjump)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            state = State.jumping;
+            isjump = false;
+        }
+    }
+    public void TouchJump()
+    {
+        if (state == State.climb)
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            canClimb = false;
+            rb.gravityScale = naturalGravity;
+            // anim.speed = 1f;
+            Jump();
+        }
+        else if (isjump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             state = State.jumping;
@@ -289,6 +336,28 @@ public class PlayerController : MonoBehaviour
         }
 
         float vDirection = Input.GetAxis("Vertical");
+
+        if (vDirection > .1f && !topLadder)
+        {
+            rb.velocity = new Vector2(0f, vDirection * climbSpeed);
+            // anim.speed = 1f;
+        }
+        else if (vDirection < -.1f && !bottomLadder)
+        {
+            rb.velocity = new Vector2(0f, vDirection * climbSpeed);
+            // anim.speed = 1f;
+        }
+        else
+        {
+            // anim.speed = 0f;
+            // rb.velocity = Vector2.zero;
+        }
+    }
+    private void TouchClimb()
+    {
+        isjump = true;
+
+        float vDirection = SimpleInput.GetAxis("Vertical");
 
         if (vDirection > .1f && !topLadder)
         {
