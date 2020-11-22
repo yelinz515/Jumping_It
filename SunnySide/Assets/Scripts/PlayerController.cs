@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 
     private bool ishurt;
     public bool isice;
+    private bool isjump;
 
     [SerializeField] private Collider2D coll;
     [SerializeField] private LayerMask ground;
@@ -55,16 +56,17 @@ public class PlayerController : MonoBehaviour
         naturalGravity = rb.gravityScale;
         ishurt = false;
         isice = false;
+        isjump = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(state == State.climb && canClimb)
+        if (state == State.climb && canClimb)
         {
             Climb();
         }
-        else if(state != State.hurt)
+        else if (state != State.hurt)
         {
             Movement();
         }
@@ -83,7 +85,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Collectable")
+        if (collision.tag == "Collectable")
         {
             Destroy(collision.gameObject);
             cherry.Play();
@@ -98,27 +100,30 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        
+
     }
 
-    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "iceground")
         {
             isice = true;
+            isjump = true;
         }
         if (collision.gameObject.tag == "normalground")
         {
             isice = false;
+            isjump = true;
         }
 
 
         if (collision.gameObject.tag == "Enemy" && !ishurt)
         {
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-            if(state == State.falling)
+            if (state == State.falling)
             {
+                isjump = true;
                 enemy.JumpedOn();
                 Jump();
             }
@@ -157,9 +162,9 @@ public class PlayerController : MonoBehaviour
                 rb.velocity = new Vector2(hurtForce, rb.velocity.y);
             }
             StartCoroutine(WaitForIt());
-         }
+        }
 
-     }
+    }
 
     private void HandleHealth()
     {
@@ -174,13 +179,13 @@ public class PlayerController : MonoBehaviour
     {
         float hDirection = Input.GetAxis("Horizontal");
 
-        if(canClimb && Mathf.Abs(Input.GetAxis("Vertical")) > .1f)
+        if (canClimb && Mathf.Abs(Input.GetAxis("Vertical")) > .1f)
         {
             state = State.climb;
             rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
             transform.position = new Vector3(ladder.transform.position.x, rb.position.y);
             rb.gravityScale = 0f;
-            
+
         }
 
         if (hDirection < 0)
@@ -197,33 +202,36 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(ground))
+        if (Input.GetButtonDown("Jump") && isjump)
         {
             Jump();
         }
     }
     private void Jump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        state = State.jumping;
-        
+        if (isjump)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            state = State.jumping;
+            isjump = false;
+        }
     }
 
     private void VelocityState()
     {
-        if(state == State.climb)
+        if (state == State.climb)
         {
 
         }
-        else if(state == State.running)
+        else if (state == State.running)
         {
             if (rb.velocity.y < -4f)
             {
                 state = State.falling;
             }
         }
-        else if(state == State.jumping)
-        {    
+        else if (state == State.jumping)
+        {
             if (rb.velocity.y < 0.1f)
             {
                 state = State.falling;
@@ -233,22 +241,28 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        else if(state == State.falling)
+        else if (state == State.falling)
         {
+            isjump = false;
+            if (coll.IsTouchingLayers(ladderLayer))
+            {
+                canClimb = true;
+            }
             if (coll.IsTouchingLayers(ground))
             {
+                isjump = true;
                 state = State.idle;
             }
         }
-        else if(state == State.hurt)
+        else if (state == State.hurt)
         {
-            if(Mathf.Abs(rb.velocity.x) < 0.1f && !ishurt)
+            if (Mathf.Abs(rb.velocity.x) < 0.1f && !ishurt)
             {
                 spr.color = oldcolor;
                 state = State.idle;
             }
         }
-        else if(Mathf.Abs(rb.velocity.x) > 2f)
+        else if (Mathf.Abs(rb.velocity.x) > 2f)
         {
             state = State.running;
         }
@@ -260,18 +274,19 @@ public class PlayerController : MonoBehaviour
 
     private void Climb()
     {
+        isjump = true;
         if (Input.GetButtonDown("Jump"))
         {
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             canClimb = false;
             rb.gravityScale = naturalGravity;
             // anim.speed = 1f;
-            Jump();  
+            Jump();
         }
 
         float vDirection = Input.GetAxis("Vertical");
 
-        if(vDirection > .1f && !topLadder)
+        if (vDirection > .1f && !topLadder)
         {
             rb.velocity = new Vector2(0f, vDirection * climbSpeed);
             // anim.speed = 1f;
@@ -281,7 +296,8 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(0f, vDirection * climbSpeed);
             // anim.speed = 1f;
         }
-        else {
+        else
+        {
             // anim.speed = 0f;
             // rb.velocity = Vector2.zero;
         }
