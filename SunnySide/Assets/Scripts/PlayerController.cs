@@ -229,6 +229,10 @@ public class PlayerController : MonoBehaviour
             {
                 state = State.falling;
             }
+            else if(Mathf.Abs(rb.velocity.x) < 1f)
+            {
+                state = State.idle;
+            }
         }
         else if (state == State.jumping)
         {

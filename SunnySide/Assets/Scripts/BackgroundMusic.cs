@@ -29,6 +29,10 @@ public class BackgroundMusic : MonoBehaviour
                 audiosource.clip = ac[0];
                 audiosource.Play();
                 break;
+            case "scenes1":
+                audiosource.clip = ac[1];
+                audiosource.Play();
+                break;
         }
     }
 
