@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public bool isice;
     private bool isjump;
 
+
     [SerializeField] private Collider2D coll;
     [SerializeField] private LayerMask ground;
     [SerializeField] private LayerMask ladderLayer;
@@ -173,7 +174,7 @@ public class PlayerController : MonoBehaviour
         health -= 1;
         if (health <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            GameObject.Find("FallCheck").GetComponent<Fall>().GameOver();
         }
     }
 
