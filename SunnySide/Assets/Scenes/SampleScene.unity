@@ -9886,11 +9886,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1225050629}
+    - target: {fileID: 2853849088553162467, guid: 5ae8ec158b325864b89ce9a88e4e91d1,
+        type: 3}
+      propertyPath: wholeCherry
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2853849089072935840, guid: 5ae8ec158b325864b89ce9a88e4e91d1,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1225050629}
+    - target: {fileID: 2853849089472759215, guid: 5ae8ec158b325864b89ce9a88e4e91d1,
+        type: 3}
+      propertyPath: wholeCherry
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2853849089640193728, guid: 5ae8ec158b325864b89ce9a88e4e91d1,
         type: 3}
       propertyPath: m_Name
