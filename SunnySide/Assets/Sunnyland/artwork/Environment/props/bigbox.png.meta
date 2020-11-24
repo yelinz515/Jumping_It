@@ -29,6 +29,18 @@ TextureImporter:
   - first:
       213: 3513190668588358366
     second: bigbox_8
+  - first:
+      213: -5445778955947204970
+    second: bigbox_0
+  - first:
+      213: 9158116895147856034
+    second: bigbox_2
+  - first:
+      213: -8769748583759453973
+    second: bigbox_6
+  - first:
+      213: -4840946160851785584
+    second: bigbox_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -68,7 +80,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -88,10 +100,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,10 +112,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d439f7293208d2250800000000000000
-      internalID: 5921529975332115277
+      spriteID: 69e187d74e4bc64b0800000000000000
+      internalID: -5445778955947204970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bigbox_2
+      name: bigbox_1
       rect:
         serializedVersion: 2
         x: 315
@@ -149,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9832078a30dd15d70800000000000000
-      internalID: 9030241735635116937
+      spriteID: 0087ae7cc1b6cbd10800000000000000
+      internalID: 2142705294078801920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bigbox_6
+      name: bigbox_2
       rect:
         serializedVersion: 2
         x: 295
@@ -170,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9a619b1d3c58a8c0800000000000000
-      internalID: -3987836052511298918
+      spriteID: 2a09aca5bca281f70800000000000000
+      internalID: 9158116895147856034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bigbox_8
+      name: bigbox_3
       rect:
         serializedVersion: 2
         x: 315
@@ -191,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eda1d65ac4c51c030800000000000000
-      internalID: 3513190668588358366
+      spriteID: 07ee203b66e7ddff0800000000000000
+      internalID: -9712644629795216
       vertices: []
       indices: 
       edges: []
