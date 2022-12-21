@@ -29,3 +29,12 @@
 > HOW TO
 
 ![게임 방법](https://user-images.githubusercontent.com/62506973/208889367-b13d82bd-6e84-4ea5-a6d4-edb0787cd29b.gif)
+
+<br>
+
+## Android
+
+안드로이드에서는 터치패드를 이용하여 컨트롤하도록 변경
+
+
+
