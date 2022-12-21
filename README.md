@@ -11,6 +11,11 @@
 * 스테이지마다 배경과 타일을 조금씩 다르게 구성하여 총 3개 스테이지를 기획
 * 플레이어는 젬을 획득하여 다음스테이지로 넘어갈 수 있다.
 
+## 개발 과정 - Graphics
+![image](https://user-images.githubusercontent.com/62506973/208890012-b6cb9a1d-c8cd-4944-96c4-aa66a1370697.png)
+
+
+
 <br>
 
 ## 게임 시연
