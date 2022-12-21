@@ -25,4 +25,5 @@
 ## 게임 시연
 
 > HOW TO
+
 ![게임 방법](https://user-images.githubusercontent.com/62506973/208889367-b13d82bd-6e84-4ea5-a6d4-edb0787cd29b.gif)
